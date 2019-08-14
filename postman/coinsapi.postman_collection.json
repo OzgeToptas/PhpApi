@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "78b6ddfc-50e8-42a9-a410-6d28390fa5eb",
+		"name": "coinsapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/coins",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"BITCOIN\":\"550\",\n\t\"LITECOIN\":\"1550\",\n\t\"ETHERIUM\":\"2550\",\n\t\"RIPPLE\":\"3550\",\n\t\"BITCOIN_CASH\":\"4550\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/coins",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"coins"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/coins",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "BITCOIN",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "LITECOIN",
+							"value": "150",
+							"type": "text"
+						},
+						{
+							"key": "ETHERIUM",
+							"value": "250",
+							"type": "text"
+						},
+						{
+							"key": "RIPPLE",
+							"value": "350",
+							"type": "text"
+						},
+						{
+							"key": "BITCOIN_CASH",
+							"value": "450",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/coins",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"coins"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/coins",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/coins",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"coins"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/coins",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/coins",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"coins"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/coins/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/coins/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"coins",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/coinsupdate/1?BITCOIN=1000&LITECOIN=750&ETHERIUM=500&RIPPLE=250&BITCOIN_CASH=100",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/coinsupdate/1?BITCOIN=1000&LITECOIN=750&ETHERIUM=500&RIPPLE=250&BITCOIN_CASH=100",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"coinsupdate",
+						"1"
+					],
+					"query": [
+						{
+							"key": "BITCOIN",
+							"value": "1000"
+						},
+						{
+							"key": "LITECOIN",
+							"value": "750"
+						},
+						{
+							"key": "ETHERIUM",
+							"value": "500"
+						},
+						{
+							"key": "RIPPLE",
+							"value": "250"
+						},
+						{
+							"key": "BITCOIN_CASH",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/coinsdelete/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/coinsdelete/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"coinsdelete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
